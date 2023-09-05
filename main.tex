@@ -1,0 +1,159 @@
+\documentclass{beamer}
+\usecolortheme{beetle}
+\usepackage{graphicx} % Required for inserting images
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{What is GitHub?}
+\author{Will Decker}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Background}
+
+\begin{figure}[t]
+\includegraphics[scale=0.05]{images/gitlogo.png}
+\end{figure}
+- Git is the most widely used source control system.
+
+- It is \textit{different} than GitHub.
+
+- GitHub is the \textit{cloud-based} version of Git. 
+
+\hspace{10mm} - You can use git commands locally to interact with GitHub.
+\end{frame}
+
+\begin{frame}
+\frametitle{Why GitHub?}
+
+\begin{figure}[t]
+\includegraphics[scale=0.1]{images/githublogo.png}
+\end{figure}
+
+- I use GitHub for a few things: 
+
+\hspace{10mm} - (Open) Source control
+
+\hspace{10mm} - Writing $\LaTeX$/Overleaf documents
+
+\hspace{10mm} - Code collaboration
+
+\hspace{10mm} - Static site hosting
+
+\end{frame}
+
+\begin{frame}
+\frametitle{GitHub Components}
+
+- \textbf{Repository}
+
+\hspace{10mm} - A repository or "repo" is where your code is housed.
+
+\hspace{10mm} - You can have a \textit{private} or \textit{public} repo.
+
+\hspace{10mm} - You can add collaborators to private and public repos.
+
+\hspace{10mm} - There are a lot of features \textit{within} a repo too.
+
+- \textbf{Repository Components}
+
+\hspace{10mm} - Issues
+
+\hspace{10mm} - Pull requests (PRs)
+
+\hspace{10mm} - Wikis
+
+\hspace{10mm} - Settings
+
+\end{frame}
+
+\begin{frame}
+\frametitle{GitHub, Git and MacOS Terminal}
+
+\begin{figure}[t]
+\includegraphics[scale=0.1]{images/macterm.png}
+\end{figure}
+
+\lstinputlisting[language=bash]{misc/example.sh}
+
+\tiny Note: using git commands is best in more complex scenarios. If you are new to Git and GitHub, I would suggest defaulting to your IDE's built-in source control framework.
+\end{frame}
+
+\begin{frame}
+\frametitle{GitHub and R Studio}
+
+\begin{figure}[t]
+\includegraphics[scale=0.05]{images/RStudio-Logo-Flat.png}
+\end{figure}
+
+- In R Studio, you have access to the terminal; you have the option to use the git commands reviewed in the previous slide. 
+
+- R Studio also has a GUI based source control framework built into the workspace. 
+
+\hspace{10mm} - There, you can visually "commit" files to your repo or pull new files in from your repo.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Other concepts}
+
+\textbf{Branches}
+
+\hspace{10mm} - Branches are divergences from the "main" branch.
+
+\hspace{10mm} - This can further control code quality and help during quality control and code reviews.
+
+\textbf{Check which branch you are on}
+
+\hspace{10mm} \lstinputlisting[language=bash]{misc/branch.sh}
+
+\textbf{Switching branches}
+
+\hspace{10mm} \lstinputlisting[language=bash]{misc/switchbranch.sh}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Other concepts contd.}
+
+\textbf{Rebase/merge conflicts}
+
+Sometimes you will edit a file in two different places at the same time. Try to AVOID doing this. If this does occur. If it occurs, there will be prompts that git outputs to help navigate this.
+
+\textbf{Forking}
+
+You can fork other people's repos to use/modify their code. (Make note of the LICENSE if there is one.
+
+\end{frame}
+
+\end{document}

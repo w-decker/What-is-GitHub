@@ -1,0 +1,1 @@
+$: git branch # tells you which branch you are on
