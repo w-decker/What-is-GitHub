@@ -5,18 +5,16 @@
 \usepackage{listings}
 \usepackage{xcolor}
 
-\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codeblue}{rgb}{0.03,0.0,1.0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{backcolour}{rgb}{0.83,0.83,0.83}
 
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
-    commentstyle=\color{codegreen},
+    commentstyle=\color{codeblue},
     keywordstyle=\color{magenta},
     numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\ttfamily\footnotesize,
+    basicstyle=\ttfamily\tiny,
     breakatwhitespace=false,         
     breaklines=true,                 
     captionpos=b,                    
@@ -104,6 +102,8 @@
 \includegraphics[scale=0.1]{images/macterm.png}
 \end{figure}
 
+Below is how to initialize a folder to git.
+
 \lstinputlisting[language=bash]{misc/example.sh}
 
 \tiny Note: using git commands is best in more complex scenarios. If you are new to Git and GitHub, I would suggest defaulting to your IDE's built-in source control framework.
@@ -112,10 +112,9 @@
 \begin{frame}
 \frametitle{GitHub, Git and MacOS Terminal contd.}
 
-If you have not created a repo in GitHub already, you need to do that. Once you have initialized your repo in git via the previous steps, you can add it using the commands in the terminal using the code below:
-\lstinputlisting[language=bash]{misc/ghsubcmd.sh}
+If you want to solely reamin in the terminal, use the commands below to create and interact with GitHub in the terminal. Otherwise continue to the next slide for a less complicated process.
 
-or you can go to your GitHub profile and upload your folder using the GitHub interface.
+\lstinputlisting[language=bash]{misc/ghcli.sh}
 
 \end{frame}
 
@@ -162,7 +161,7 @@ Sometimes you will edit a file in two different places at the same time. Try to 
 
 \textbf{Forking}
 
-You can fork other people's repos to use/modify their code. (Make note of the LICENSE if there is one.
+You can fork other people's repos to use/modify their code. (Make note of the LICENSE if there is one.)
 
 \end{frame}
 

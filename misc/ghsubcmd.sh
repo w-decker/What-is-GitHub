@@ -1,1 +1,1 @@
-$: gh repo create -source=path/to/folder --public # creates a public GitHub repo from local folder
+$: gh repo create <name> --public --add-readme # creates a public GitHub repo from local folder
